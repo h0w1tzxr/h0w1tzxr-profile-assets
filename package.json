@@ -1,0 +1,15 @@
+{
+  "name": "h0w1tzxr-profile-assets",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update:badges": "node scripts/update-platform-badges.mjs",
+    "update:streak": "node scripts/update-github-streak.mjs",
+    "theme:metrics": "node scripts/theme-metrics.mjs",
+    "build:public": "node scripts/build-public-assets.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.60.0"
+  }
+}

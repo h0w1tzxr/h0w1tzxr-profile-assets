@@ -1,0 +1,76 @@
+<svg width="860" height="370" viewBox="0 0 860 370" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Stacks</title>
+  <desc id="desc">A compact technical stack used to study binaries, debug crashes, and exploit targets.</desc>
+  <defs>
+    <linearGradient id="panelBg" x1="0" y1="0" x2="860" y2="370" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1117"/>
+      <stop offset="0.55" stop-color="#111923"/>
+      <stop offset="1" stop-color="#0B121A"/>
+    </linearGradient>
+    <radialGradient id="greenGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(700 42) rotate(146) scale(315 190)">
+      <stop stop-color="#80F070" stop-opacity="0.17"/>
+      <stop offset="1" stop-color="#80F070" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="52" y1="0" x2="808" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#80F070" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#80F070" stop-opacity="0.68"/>
+      <stop offset="1" stop-color="#60B050" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rowFill" x1="50" y1="0" x2="810" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#121B26"/>
+      <stop offset="1" stop-color="#0F1720"/>
+    </linearGradient>
+    <filter id="softShadow" x="-8%" y="-10%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="859" height="369" rx="20" fill="url(#panelBg)" stroke="#26384E"/>
+  <rect x="0.5" y="0.5" width="859" height="369" rx="20" fill="url(#greenGlow)"/>
+  <path d="M52 72H808" stroke="url(#line)"/>
+
+  <text x="430" y="40" text-anchor="middle" fill="#F4F7FB" font-family="JetBrains Mono, Consolas, monospace" font-size="18" font-weight="800">Stacks</text>
+  <text x="430" y="60" text-anchor="middle" fill="#8F9CAF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11.5">A small stack I use to study binaries, debug crashes, and exploit targets.</text>
+
+  <g filter="url(#softShadow)" font-family="Inter, Segoe UI, Arial, sans-serif">
+    <g transform="translate(50 90)">
+      <rect width="760" height="48" rx="12" fill="url(#rowFill)" stroke="#26384E"/>
+      <rect x="16" y="14" width="4" height="20" rx="2" fill="#80F070"/>
+      <text x="38" y="29" fill="#F4F7FB" font-size="13" font-weight="800">Linux / Shell / Git</text>
+      <text x="278" y="21" fill="#AAB6C5" font-size="11.5">My base workspace for labs, builds, notes, scripts,</text>
+      <text x="278" y="36" fill="#AAB6C5" font-size="11.5">and keeping experiments reproducible.</text>
+    </g>
+
+    <g transform="translate(50 146)">
+      <rect width="760" height="48" rx="12" fill="url(#rowFill)" stroke="#26384E"/>
+      <rect x="16" y="14" width="4" height="20" rx="2" fill="#B8F7A8"/>
+      <text x="38" y="29" fill="#F4F7FB" font-size="13" font-weight="800">C / Python</text>
+      <text x="278" y="21" fill="#AAB6C5" font-size="11.5">Where I read low-level behavior, recreate small bugs,</text>
+      <text x="278" y="36" fill="#AAB6C5" font-size="11.5">and automate the boring parts of analysis/exploitation.</text>
+    </g>
+
+    <g transform="translate(50 202)">
+      <rect width="760" height="48" rx="12" fill="url(#rowFill)" stroke="#26384E"/>
+      <rect x="16" y="14" width="4" height="20" rx="2" fill="#6DD6FF"/>
+      <text x="38" y="29" fill="#F4F7FB" font-size="13" font-weight="800">Rizin / pwndbg / IDA</text>
+      <text x="278" y="21" fill="#AAB6C5" font-size="11.5">What I use to perform dynamic/static analysis, inspect registers</text>
+      <text x="278" y="36" fill="#AAB6C5" font-size="11.5">and memory, and turn crashes into context.</text>
+    </g>
+
+    <g transform="translate(50 258)">
+      <rect width="760" height="48" rx="12" fill="url(#rowFill)" stroke="#26384E"/>
+      <rect x="16" y="14" width="4" height="20" rx="2" fill="#E6F7A8"/>
+      <text x="38" y="29" fill="#F4F7FB" font-size="13" font-weight="800">Fuzzware / Qiling / HALucinator</text>
+      <text x="278" y="21" fill="#AAB6C5" font-size="11.5">For fuzzing embedded firmware, emulating target behavior,</text>
+      <text x="278" y="36" fill="#AAB6C5" font-size="11.5">and rehosting firmware to find bugs without the physical device.</text>
+    </g>
+
+    <g transform="translate(50 314)">
+      <rect width="760" height="40" rx="12" fill="url(#rowFill)" stroke="#26384E"/>
+      <rect x="16" y="10" width="4" height="20" rx="2" fill="#93D977"/>
+      <text x="38" y="25" fill="#F4F7FB" font-size="13" font-weight="800">GNU Radio / URH / Inspectrum</text>
+      <text x="278" y="17" fill="#AAB6C5" font-size="11.5">For reversing radio protocols, analyzing IQ captures, and studying</text>
+      <text x="278" y="32" fill="#AAB6C5" font-size="11.5">replay, injection, and signal-level attack paths.</text>
+    </g>
+  </g>
+</svg>

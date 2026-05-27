@@ -1,0 +1,34 @@
+<svg width="820" height="42" viewBox="0 0 820 42" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Offensive security terminal flow</title>
+  <desc id="desc">Short pwndbg workflow commands for binary triage and exploit development.</desc>
+  <style>
+    text {
+      font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
+      font-size: 17px;
+      font-weight: 700;
+      fill: #80f070;
+      opacity: 0;
+      animation: line 16s infinite;
+    }
+    .l1 { animation-delay: 0s; }
+    .l2 { animation-delay: 2s; }
+    .l3 { animation-delay: 4s; }
+    .l4 { animation-delay: 6s; }
+    .l5 { animation-delay: 8s; }
+    .l6 { animation-delay: 10s; }
+    .l7 { animation-delay: 12s; }
+    .l8 { animation-delay: 14s; }
+    @keyframes line {
+      0%, 10% { opacity: 1; }
+      12.5%, 100% { opacity: 0; }
+    }
+  </style>
+  <text class="l1" x="410" y="27" text-anchor="middle">$ pwn checksec ./pwnable</text>
+  <text class="l2" x="410" y="27" text-anchor="middle">$ pwndbg ./pwnable</text>
+  <text class="l3" x="410" y="27" text-anchor="middle">pwndbg&gt; start</text>
+  <text class="l4" x="410" y="27" text-anchor="middle">pwndbg&gt; nearpc</text>
+  <text class="l5" x="410" y="27" text-anchor="middle">pwndbg&gt; vmmap</text>
+  <text class="l6" x="410" y="27" text-anchor="middle">pwndbg&gt; telescope $rsp 8</text>
+  <text class="l7" x="410" y="27" text-anchor="middle">pwndbg&gt; got</text>
+  <text class="l8" x="410" y="27" text-anchor="middle">pwndbg&gt; rop --grep "pop rdi"</text>
+</svg>
